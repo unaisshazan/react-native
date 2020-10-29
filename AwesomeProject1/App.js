@@ -21,9 +21,9 @@ export default class LotsOfStyles extends Component {
   UTech
  
 </Text>
+<Todo />
 <Todo title="unais"/>
-<Todo/>
-<Todo/>
+<Todo title="unais"/>
       </View>
 
       </SafeAreaView>
