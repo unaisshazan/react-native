@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Todo from './Todo'
 const styles = StyleSheet.create({
@@ -12,27 +12,31 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class LotsOfStyles extends Component {
-  render() {
-    return (
-      <SafeAreaView>
-      <View>
-<Text style={styles.bigBlue}>
+
+
+const App = () => {
+  const[input,setInput] = useState('')
+  return (
+    <SafeAreaView>
+    <View>
+  <Text style={styles.bigBlue}>
   UTech
- 
-</Text>
-<Todo />
-<Todo title="unais"/>
-<Todo title="unais"/>
-<TextInput
-value
-onChangeText
-
-/>
-      </View>
-
-      </SafeAreaView>
-
-    );
-  }
+  
+  </Text>
+  <Todo />
+  <Todo title="unais"/>
+  <Todo title="unais"/>
+  <TextInput
+  value
+  onChangeText={text=> setInput(text)}
+  
+  />
+    </View>
+  
+    </SafeAreaView>
+  
+  );
 }
+
+export default App
+
