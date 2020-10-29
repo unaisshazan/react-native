@@ -1,10 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Todo = () => {
+const Todo = ({title,}) => {
     return (
         <View>
-            <Text></Text>
+            <Text>{title}</Text>
+        
         </View>
     )
 }

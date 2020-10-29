@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-
+import Todo from './Todo'
 const styles = StyleSheet.create({
   bigBlue: {
     color: 'blue',
@@ -19,7 +19,11 @@ export default class LotsOfStyles extends Component {
       <View>
 <Text style={styles.bigBlue}>
   UTech
+ 
 </Text>
+<Todo title="unais"/>
+<Todo/>
+<Todo/>
       </View>
 
       </SafeAreaView>
