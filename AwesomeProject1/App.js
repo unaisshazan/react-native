@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
+  
     fontSize: 30,
     textAlign:'center'
   }
@@ -13,11 +14,15 @@ const styles = StyleSheet.create({
 export default class LotsOfStyles extends Component {
   render() {
     return (
+      <SafeAreaView>
       <View>
 <Text style={styles.bigBlue}>
   UTech
 </Text>
       </View>
+
+      </SafeAreaView>
+
     );
   }
 }
