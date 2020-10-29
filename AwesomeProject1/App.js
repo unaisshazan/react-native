@@ -1,5 +1,5 @@
 import React, { Component,useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, View,Button } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, View,Button ,Image} from 'react-native';
 import Todo from './Todo'
 const styles = StyleSheet.create({
   bigBlue: {
@@ -29,7 +29,10 @@ const App = () => {
   }
   return (
     <SafeAreaView>
+
     <View>
+    
+    <Image source ='https://i.ibb.co/QKqzm4f/circle-cropped-Copy.png' />
   <Text style={styles.bigBlue}>
   UTech
   
@@ -46,14 +49,14 @@ const App = () => {
   
   />
 
-    <Todo title="have your kid understand everything?"/>
+    <Todo title="Have your kid understand everything?"/>
   <TextInput
   style={styles.todoInput}
   value
   onChangeText={text=> setInput(text)}
   
   />
-  <Button title='Submit' onPress={
+  <Button title='Submit' onPress={ addTodo
 
   }/>
     </View>
