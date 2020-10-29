@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const Todo = ({title='add values'}) => {
     return (
         <View>
-            <Text>{title}</Text>
+            <Text style={styles.text1}>{title}</Text>
         
         </View>
     )
@@ -12,4 +12,10 @@ const Todo = ({title='add values'}) => {
 
 export default Todo
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    
+  text1:{
+textAlign:"center",
+fontSize:23
+  }
+})
