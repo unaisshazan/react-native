@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
+    backgroundColor: 'yellow',
   
     fontSize: 30,
     textAlign:'center'
