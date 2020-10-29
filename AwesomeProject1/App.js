@@ -31,8 +31,11 @@ const App = () => {
     <SafeAreaView>
 
     <View>
-    
-    <Image source ='https://i.ibb.co/QKqzm4f/circle-cropped-Copy.png' />
+    <Image 
+    source={{uri: 'https://i.ibb.co/QKqzm4f/circle-cropped-Copy.png'}} 
+    style={{width: 400, height: 400}} 
+/>
+  
   <Text style={styles.bigBlue}>
   UTech
   
