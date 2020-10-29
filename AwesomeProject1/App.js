@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Todo from './Todo'
 const styles = StyleSheet.create({
   bigBlue: {
@@ -24,6 +24,11 @@ export default class LotsOfStyles extends Component {
 <Todo />
 <Todo title="unais"/>
 <Todo title="unais"/>
+<TextInput
+value
+onChangeText
+
+/>
       </View>
 
       </SafeAreaView>
