@@ -34,7 +34,9 @@ const App = () => {
   UTech
   
   </Text>
-  
+  {todos.map(todo=>{
+    <Todo title={todo}/>
+  })}
   <Todo  title="Parent FeedBack App"/>
   <Todo title="How is your course experience?"/>
   <TextInput
