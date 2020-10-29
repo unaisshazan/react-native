@@ -22,6 +22,11 @@ margin:20,
 
 const App = () => {
   const[input,setInput] = useState('')
+  const [todos, setTodos] = useState([''])
+  const addTodo=()=>{
+    setTodos([input,...todos]);
+    setInput('');
+  }
   return (
     <SafeAreaView>
     <View>
@@ -29,6 +34,7 @@ const App = () => {
   UTech
   
   </Text>
+  
   <Todo  title="Parent FeedBack App"/>
   <Todo title="How is your course experience?"/>
   <TextInput
@@ -46,7 +52,7 @@ const App = () => {
   
   />
   <Button title='Submit' onPress={
-    
+
   }/>
     </View>
   
