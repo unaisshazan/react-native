@@ -48,9 +48,7 @@ Todo List App
   
   />
 
-  <Button onPress={ addTodo
-
-} title='Add Todo' />
+  <Button onPress={addTodo} title='Add Todo'/>
 
   
     </SafeAreaView>

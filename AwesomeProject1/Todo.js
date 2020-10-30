@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Todo = ({title}) => {
+const Todo = ({title=''}) => {
     return (
         <View>
             <Text>{title}</Text>
