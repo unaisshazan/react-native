@@ -35,7 +35,7 @@ const App = () => {
     <Image 
     source={{uri: 'https://i.ibb.co/QKqzm4f/circle-cropped-Copy.png'}} 
     style={{
-      marginLeft:95,
+      margin:80,
       width: 200, height: 200}} 
 />
 
