@@ -64,7 +64,7 @@ Todo List App
   onChangeText={text=> setAmount(text)}
   
   />
-  <Button onPress={addTodo} title='Add Todo'/>
+  <Button onPress={addTodo} title='Add Gog'/>
 
   
     </SafeAreaView>
