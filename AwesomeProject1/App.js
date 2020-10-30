@@ -34,8 +34,9 @@ const App = () => {
 
   <Text style={styles.bigBlue}>
 Todo List App
-  
+
   </Text>
+  </View>
   {todos.map(todo=>{
     <Todo title={todo}/>
   })}
@@ -47,10 +48,10 @@ Todo List App
   
   />
 
-  <Button title='Add Todo' onPress={ addTodo
+  <Button onPress={ addTodo
 
-  }/>
-    </View>
+} title='Add Todo' />
+
   
     </SafeAreaView>
   

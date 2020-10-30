@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Todo = ({title='add values'}) => {
+const Todo = ({title}) => {
     return (
         <View>
-            <Text style={styles.text1}>{title}</Text>
+            <Text>{title}</Text>
         
         </View>
     )
