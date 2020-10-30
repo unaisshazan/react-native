@@ -30,17 +30,10 @@ const App = () => {
   return (
     <SafeAreaView>
 
-    <View>
-     
-    <Image 
-    source={{uri: 'https://i.ibb.co/QKqzm4f/circle-cropped-Copy.png'}} 
-    style={{
-      margin:80,
-      width: 200, height: 200}} 
-/>
+    <View>  
 
   <Text style={styles.bigBlue}>
-  UTech
+Todo List App
   
   </Text>
   {todos.map(todo=>{
@@ -55,14 +48,7 @@ const App = () => {
   
   />
 
-    <Todo title="Have your kid understand everything?"/>
-  <TextInput
-  style={styles.todoInput}
-  value
-  onChangeText={text=> setInput(text)}
-  
-  />
-  <Button title='Submit' onPress={ addTodo
+  <Button title='Add Todo' onPress={ addTodo
 
   }/>
     </View>

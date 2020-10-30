@@ -15,7 +15,6 @@ export default Todo
 const styles = StyleSheet.create({
     
   text1:{
-textAlign:"center",
-fontSize:23
+
   }
 })
