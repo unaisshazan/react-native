@@ -39,7 +39,9 @@ amount: 499
 setGigs([...gigs,{
   description:description,
 amount:amount
-}])
+}]);
+setDescription('');
+setAmount('');
 
   }
   return (
@@ -72,7 +74,7 @@ Todo List App
   onChangeText={text=> setAmount(text)}
   
   />
-  <Button onPress={addTodo} title='Add Gog'/>
+  <Button disabled={} onPress={addTodo} title='Add Gog'/>
 
   
     </SafeAreaView>
