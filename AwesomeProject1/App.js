@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   todoInput:{
 margin:20,
     height:40,
+    padding:20,
     borderColor:'red',
     borderWidth:1
   }
@@ -64,7 +65,7 @@ Todo List App
   <TextInput
   style={styles.todoInput}
   value={amount}
-  placeholder='Enter the amount'
+  placeholder='Enter the amount $'
   keyboardType='numeric'
   
   
