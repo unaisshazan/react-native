@@ -34,6 +34,13 @@ amount: 499
     setTodos([input, ...todos]);
     setInput(''); 
   }
+  const addGig=()=>{
+setGigs([...gigs,{
+  description:description,
+amount:amount
+}])
+
+  }
   return (
     <SafeAreaView>
 
