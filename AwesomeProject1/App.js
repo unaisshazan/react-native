@@ -21,8 +21,15 @@ margin:20,
 
 
 const App = () => {
-  const[input,setInput] = useState('')
-  const [todos, setTodos] = useState([])
+  const[description,setDescription] = useState('');
+
+  const [amount, setAmount] = useState(0);
+  const[ gigs,setGigs] = useState([
+{ 
+description: 'Freelance',
+amount: 499
+}
+  ]);
   const addTodo=()=>{
     setTodos([input, ...todos]);
     setInput(''); 
@@ -47,7 +54,12 @@ Todo List App
   onChangeText={text=> setInput(text)}
   
   />
-
+  <TextInput
+  style={styles.todoInput}
+  value={input}
+  onChangeText={text=> setInput(text)}
+  
+  />
   <Button onPress={addTodo} title='Add Todo'/>
 
   
