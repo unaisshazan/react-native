@@ -44,22 +44,22 @@ Todo List App
 
   </Text>
   </View>
-  {todos.map(todo=>{
-    <Todo title={todo}/>
-  })}
+
 
   <TextInput
   style={styles.todoInput}
   value={description}
-  keyboardType='numeric'
-  
+
+  placeholder='Enter a decription'
   onChangeText={text=> setDescription(text)}
   
   />
   <TextInput
   style={styles.todoInput}
   value={amount}
+  placeholder='Enter the amount'
   keyboardType='numeric'
+  
   
   onChangeText={text=> setAmount(text)}
   
