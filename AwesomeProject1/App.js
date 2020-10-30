@@ -50,14 +50,14 @@ Todo List App
 
   <TextInput
   style={styles.todoInput}
-  value={input}
-  onChangeText={text=> setInput(text)}
+  value={description}
+  onChangeText={text=> setDescription(text)}
   
   />
   <TextInput
   style={styles.todoInput}
-  value={input}
-  onChangeText={text=> setInput(text)}
+  value={amount}
+  onChangeText={text=> setAmount(text)}
   
   />
   <Button onPress={addTodo} title='Add Todo'/>
