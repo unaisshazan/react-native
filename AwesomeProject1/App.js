@@ -22,10 +22,10 @@ margin:20,
 
 const App = () => {
   const[input,setInput] = useState('')
-  const [todos, setTodos] = useState([''])
+  const [todos, setTodos] = useState([])
   const addTodo=()=>{
-    setTodos([input,...todos]);
-    setInput('');
+    setTodos([input, ...todos]);
+    setInput(''); 
   }
   return (
     <SafeAreaView>
@@ -39,11 +39,10 @@ Todo List App
   {todos.map(todo=>{
     <Todo title={todo}/>
   })}
-  <Todo  title="Parent FeedBack App"/>
-  <Todo title="How is your course experience?"/>
+
   <TextInput
   style={styles.todoInput}
-  value
+  value={input}
   onChangeText={text=> setInput(text)}
   
   />
