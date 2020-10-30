@@ -51,12 +51,16 @@ Todo List App
   <TextInput
   style={styles.todoInput}
   value={description}
+  keyboardType='numeric'
+  
   onChangeText={text=> setDescription(text)}
   
   />
   <TextInput
   style={styles.todoInput}
   value={amount}
+  keyboardType='numeric'
+  
   onChangeText={text=> setAmount(text)}
   
   />
