@@ -1,5 +1,5 @@
-import React, { Component,useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, View,Button ,Image} from 'react-native';
+import React, {useState } from 'react';
+import { SafeAreaView, StyleSheet, Text, TextInput, View,Button   } from 'react-native';
 import Todo from './Todo'
 const styles = StyleSheet.create({
   bigBlue: {
